@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Bootstrap 5.0.2 CSS for design -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <!-- Font Awesome CSS for icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style = "background: linear-gradient(to bottom, #a4e2eb, #ccf188); ">
+            <div class="container" >
+                <a class="navbar-brand" style="font-size: 50px; font-style: italic;" href="#"><b>Task Manager</b></a>
+                <i class="uil uil-brightness" onclick="myFunction()" style="font-size: xx-large; color: black; font-weight: bolder;" ></i>
+            </div>
+            
+        </nav>
+        
+    </header>
+  
+
+   
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Input Fields -->
+            <div class="col-md-6">
+                <h2>Add Task</h2>
+                <form>
+
+                    <div class="mb-3">
+                        <label for="taskName" class="form-label">Task</label>
+                        <input type="text" class="form-control" id="taskName" placeholder="Enter Task">
+                    </div>
+                    <div class="mb-3">
+                        <label for="assignedTo" class="form-label">Assigned to</label>
+                        <input type="text" class="form-control" id="assignedTo" placeholder="Enter Assigned To">
+                    </div>
+                    <div class="mb-3">
+                        <label for="categories" class="form-label">Categories</label>
+                        <select class="form-select" id="categories"> 
+                            <option value="Work">Work</option>
+                            <option value="Personal">Personal</option>
+                            <option value="Shopping">Shopping</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="taskDate" class="form-label">Date</label>
+                        <input class="form-control" type="date" id="taskDate">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="addTask">Add Task</button>
+                </form>
+            </div>
+
+            <!-- Filter Options -->
+            <div class="col-md-6">
+                <h2>Filter Tasks</h2>
+               
+                <div class="mb-3">
+                    <label for="search" class="form-label">Search:</label>
+                    <input type="search" class="form-control" id="search" placeholder="Search...">
+                   
+                    
+                </div>
+                <div class="mb-3">
+                    <label for="filterOption" class="form-label">Filter by:</label>
+                    <select class="form-select" id="filterOption">
+                        <option value="all">All</option>
+                        <option value="complete">Complete</option>
+                        <option value="incomplete">Incomplete</option>
+                        <option value="work">Work</option>
+                        <option value="personal">Personal</option>
+                        <option value="shopping">Shopping</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Table at the Bottom -->
+    <div class="container mt-5">
+        <h2>Task List</h2>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">S no</th>
+                        <th scope="col">Task</th>
+                        <th scope="col">Assigned to</th>
+                        <th scope="col">Categories</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>            
+                <tbody id="records">
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+   
+    
+</body>
+</html>

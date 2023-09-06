@@ -1,0 +1,39 @@
+
+
+header nav{
+  border-radius: 100px;
+}
+
+body {
+    padding: 25px;
+    
+    color: black;
+    font-size: 25px;
+  }
+  
+ 
+
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(#95dfd8, #1f5da3);
+    border-radius: 6px;
+  }
+
+  .form-label {
+    font-weight: bold;
+}
+
+
+body {
+  background: linear-gradient(to bottom, #84e9ee, #cce587); /* Adjust colors as needed */
+  height: 100vh;
+}
+
+
+body.dark-mode {
+  background: linear-gradient(to bottom, #333333, #000000); /* Adjust colors as needed */
+  color: white;
+}
+
