@@ -3,7 +3,8 @@ Task-Manager Web App <a href = "https://task-manager-azure-phi.vercel.app/"> Liv
 
 This web application is designed to help you manage your tasks effectively. It's built using HTML, CSS, JavaScript and Bootstrap. The app provides CRUD (Create, Read, Update, Delete) functionality for tasks, allowing you to add, edit, change status, and delete tasks. Additionally, the app supports search, filter, and sort operations within the task table.
 
-##Features
+
+## Features
 
 - **Create Task:** Add new tasks with a title, description, and due date.
 
@@ -29,6 +30,7 @@ This web application is designed to help you manage your tasks effectively. It's
 - **JavaScript:** Programming language used to add interactivity and dynamic behavior.
 
 - **Bootstrap:** CSS framework for responsive and mobile-first design.
+
 
 ## Usage
 
